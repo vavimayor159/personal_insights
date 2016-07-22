@@ -1,0 +1,70 @@
+body{
+  background: #2C3E50;
+}
+
+h1{
+  background: #2C3E50;
+  margin: 0;
+  padding: 25px;
+  color: #FFF;
+}
+
+#pruebas{
+  padding-bottom: 100px;
+  background: #FFF;
+  h2{
+    text-align: center;
+    padding: 20px 0;
+  }
+  .btn{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    i{
+      font-size: 19em;
+    }
+  }
+
+  .col-lg-6:nth-child(1){
+    i:hover{
+      color: #3B5998;
+    }
+  }
+
+  .col-lg-6:nth-child(2){
+    i:hover{
+      color: #55ACEE;
+    }
+  }
+
+}
+
+.general-chart{
+  h2{
+    text-align: center;
+  }
+}
+
+.circular-chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.circular-chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  margin-left: 0.1em;
+  font-size: .8em;
+}

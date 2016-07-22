@@ -1,0 +1,31 @@
+<h1> Sistema de evaluación personal</h1>
+<div class="container-fluid" id="pruebas">
+  <h2> Prueba con distintas redes sociales</h2>
+  <div class="row">
+    <div class="col-lg-6">
+      <button onclick="login()" class="btn btn-default">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="col-lg-6">
+      <button onclick="login()" class="btn btn-default">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container" id="principal">
+</div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<%= process.env.FACEBOOK_ID || sails.config.facebook_id%>',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+</script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="/js/jquery.easypiechart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+<script src="/js/home.js"></script>
